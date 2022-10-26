@@ -21,6 +21,7 @@ color: var(--main-background-color);
 }
 
 .section {
+outline: 1px solid rgb(117, 68, 232);
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -213,8 +214,9 @@ background-color: var(--color-accent-hover);
 
 /* наші переваги */
 
-.advantages-information {
-padding-bottom: 0;
+.advantages-information .title {
+  padding: 0;
+
 background: var(--main-background-color);
 }
 
@@ -235,84 +237,32 @@ gap: 30px;
   display: block;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--main-background-color);
 }
 
-.warning {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-text-color);
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  text-align: start;
 }
 
-.warning-text {
+.advantage-text {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-bottom: 10px;
 color:var(--text-color-gray);
 }
 
-.punctuality {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-text-color);
-}
-
-.punctuality-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-margin-bottom: 10px;
-color:var(--text-color-gray);
-}
-
-.planning {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-text-color);
-}
-
-.planning-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-margin-bottom: 10px;
-color: var(--text-color-gray);
-}
-
-.technologies {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-text-color);
-}
-
-.technologies-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-margin-bottom: 10px;
-color: var(--text-color-gray);
-}
 
 /*чим займаємось*/
 .advantages-information {outline: solid tomato;}
