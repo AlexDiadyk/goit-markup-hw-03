@@ -309,9 +309,11 @@ background: url(creative-artist-web-design-with-working-colour-selection-graphic
 
 .team {
 background:var(--third-color-background);
-padding-top: 94px;
-padding-bottom: 94px;
 }
+
+.container-team {
+  padding-top: 0px;
+  padding-bottom: 94px;}
 
 .our-team {
 margin-top: 0;
@@ -403,11 +405,10 @@ color: var(--text-color-gray);
 background: var(--second-background-color);
 }
 
-.footer-container {
-  margin-top: 60;
-  margin-bottom: 60px;
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
 
 .logo-footer {
 display: block;
@@ -677,4 +678,3 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--text-color-gray);
 }
-
