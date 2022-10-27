@@ -16,12 +16,11 @@ font-family:'Roboto', sans-serif;
 font-weight: 400;
 font-size: 14px;
 letter-spacing: 0.03em;
-line-height: 1.71;
+line-height: 1.14;
 color: var(--main-background-color);
 }
 
 .section {
-outline: 1px solid rgb(117, 68, 232);
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -39,7 +38,11 @@ max-width: 1200px;
 list-style: none;
 margin: 0;
 padding-left: 0;
-  }
+}
+
+li {
+  list-style-type: none;
+}
 
 /* header */
 /* навігація */
@@ -171,10 +174,6 @@ background-position: center;
 background-size: cover;
 }
 
-.section {
-padding-top: 94px;
-}
-
 .title-decision {
 outline: 1px solid tomato;
 margin-top: 0%;
@@ -212,18 +211,17 @@ text-decoration: none;
 background-color: var(--color-accent-hover);
   }
 
-/* наші переваги */
-
-.advantages-information .title {
-  padding: 0;
-
-background: var(--main-background-color);
-}
-
 .order-container {
 margin-bottom: 0;
 padding: 200px 277px 195px 277px;
 color: var(--main-background-color);
+}
+
+/* наші переваги */
+
+.advantages-information .title {
+padding: 0;
+background: var(--main-background-color);
 }
 
 .visually-hidden { position: absolute; white-space: nowrap; width: 0px; height: 0px; overflow: hidden; border: 0;}
@@ -234,25 +232,25 @@ gap: 30px;
 }
 
 .advantage-item {
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--main-background-color);
+display: block;
+width: 270px;
+height: 120px;
+background-size: 70px 70px;
+background-repeat: no-repeat;
+background-position: center;
+background-color: var(--main-background-color);
 }
 
 .title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-  text-align: start;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+margin-top: 0px;
+margin-bottom: 10px;
+text-transform: uppercase;
+color: var(--primary-text-color);
+text-align: start;
 }
 
 .advantage-text {
@@ -260,17 +258,19 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color:var(--text-color-gray);
+margin-top: 0px;
+margin-bottom: 0px;
+color: var(--text-color-gray);
 }
 
 
-/*чим займаємось*/
+/* чим займаємось */
+
 .advantages-information {outline: solid tomato;}
 
 .information {
  background: var(--main-background-color);
 }
-
 
 .work {
 margin-top: 0;
@@ -285,22 +285,23 @@ color: var(--primary-text-color);
 
 .work-img {
 display: flex;
+margin-right: auto;
+margin-left: auto;
 gap: 30px;
 }
 
 .foto-left {
-  position: relative;
+position: relative;
 background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-mix-blend-mode: normal;
 }
 
 .foto-centr {
-  position: relative;
+position: relative;
 background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
 }
 
 .foto-right {
-  position: relative;
+position: relative;
 background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
@@ -308,10 +309,12 @@ background: url(creative-artist-web-design-with-working-colour-selection-graphic
 
 .team {
 background:var(--third-color-background);
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .our-team {
-  margin-top: 0;
+margin-top: 0;
 margin-bottom: 50px;
 text-align: center;
 font-weight: 700;
@@ -322,23 +325,29 @@ color: var(--primary-text-color);
 }
 
 .background-team {
-  display: flex;
+display: flex;
 font-size: 16px;
 line-height: 1.19;
 gap: 30px;
-background-color: var(--main-background-color);
+text-align: center;
+background-color: var(--third-color-background);;
 }
 
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 24px;
-  width: 270px;
-  
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  background-color: var(--main-background-color);
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-basis: calc((100% - 30% * 3) / 4);
+align-items: center;
+padding-bottom: 0px;
+width: 270px;
+box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+background-color: var(--main-background-color);
+}
+
+.team-wrapper {
+padding-top: 30px 10px;
 }
 
 .demianenko {
@@ -346,24 +355,6 @@ display: inline-block;
 margin-bottom: 30px;
 background: url(4853.jpg);
 border-radius: 0px;
-}
-
-.name-demianenko {
-  margin-top: 0;
-margin-bottom: 10px;
-font-weight: 500;
-font-size: inherit;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
-}
-
-.profession-demianenko {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
 }
 
 .repina {
@@ -374,47 +365,11 @@ background: url(5844.jpg);
 border-radius: 0px;
 }
 
-.name-repina {
-  margin-top: 0;
-margin-bottom: 10px;
-font-weight: 500;
-font-size: inherit;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
-}
-
-.profession-repina {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
-}
-
 .tarasov {
 display: inline-block;
 margin-bottom: 30px;
 background: url(16166.jpg);
 border-radius: 0px;
-}
-
-.name-tarasov {
-  margin-top: 0;
-margin-bottom: 10px;
-font-weight: 500;
-font-size: inherit;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
-}
-
-.profession-tarasov {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
 }
 
 .ermakov {
@@ -423,24 +378,24 @@ margin-bottom: 30px;
 background: url(2968.jpg);
 border-radius: 0px;
 }
-
-.name-ermakov {
-  margin-top: 0;
+ .name {
+margin-top: 0;
 margin-bottom: 10px;
 font-weight: 500;
 font-size: inherit;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
-}
+ }
 
-.profession-ermakov { 
+.specialty {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-color: var(--text-color-gray); 
-}
+margin-bottom: 30px;
+color: var(--text-color-gray);
+ }
 
 /*footer*/
 
@@ -449,20 +404,15 @@ background: var(--second-background-color);
 }
 
 .footer-container {
-padding-top: 48px;
-padding-bottom: 0;
+  margin-top: 60;
+  margin-bottom: 60px;
 }
 
-.footer-content {
-display: flex;
-align-items: baseline;
-flex-direction: row;
-padding-bottom: 28px;
- }
 
 .logo-footer {
-  display: block;
-margin-bottom: 10px;
+display: block;
+margin-top: 0px;
+margin-bottom: 20px;
 text-decoration: none;
 font-family: 'Raleway';
 font-weight: 700;
@@ -476,6 +426,8 @@ color: var(--accent);
 color:var(--text-color-white);
 }
 
+.footer-list {padding: 0px; margin: 0;}
+
 .adress-footer {
 text-decoration: none;
 font-family: 'Roboto';
@@ -483,6 +435,8 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin-top: 0px;
+margin-bottom: 9px;
 color: var(--text-color-white);
 }
 
@@ -494,6 +448,9 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin-top: 0px;
+margin-bottom: 9px;
+
 color: var(--text-color-gray);
 }
 
@@ -505,6 +462,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin-top: 0px;
+margin-bottom: 0px;
 color: var(--text-color-gray);
 }
 
