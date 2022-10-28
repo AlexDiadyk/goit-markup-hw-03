@@ -86,8 +86,8 @@ background: var(--main-background-color);
 .site-nav .link.current,
 .site-nav .link:focus,
 .site-nav .link:hover,
-.contacts .link:focus,
-.contacts .link:hover {
+.footer-list .link:focus,
+.footer-list .link:hover {
 color:var(--accent);
 }
 
