@@ -43,9 +43,9 @@
         <section>
             <!--фільтр-->
             <h2 class="visually-hidden">фільтр портфоліо</h2>
-            <ul class="site-nav">
-                <li>
-                    <button type="button" class="button-filtr current"> всі</button>
+            <ul class="site-nav list list-filtr">
+                <li class="">
+                    <button type="button" class="button-filtr current"> Усі</button>
                 </li>
                 <li>
                     <button type="button" class="button-filtr"> веб-сайти</button>
@@ -61,78 +61,98 @@
                 </li>
             </ul>
             <!--фільтр картинки-->
-            <ul class="point-mail">
-                <li>
+            <div class="container">
+            <ul class="flex-container list">
+                <li class="gallery-item">
                     <img class="image-tehnokriak" src="./images/tehnokriak.jpg" alt="tehnokriak" width="370" height="294">
-                    <h3 class="tittle-tehnokriak">технокряк</h3>
-                    <p class="web-tehnokriak">веб-сайт</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">технокряк</h3>
+                    <p class="text-p">веб-сайт</p>
+                   </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-poster" src="./images/poster.jpg" alt="poster" width="370" height="294">
-                    <h3 class="tittle-poster">постер new orlean vs golden star</h3>
-                    <p class="poster-design">дизайн</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">постер new orlean vs golden star</h3>
+                    <p class="text-p">дизайн</p>
+                   </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-seafood" src="./images/seafood.jpg" alt="seafood" width="370" height="294">
-                    <h3 class="tittle-seafood">ресторан seafood</h3>
-                    <p class="seafood-addition">додаток</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">ресторан seafood</h3>
+                    <p class="text-p">додаток</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-prime" src="./images/prime.jpg" alt="prime" width="370" height="294">
-                    <h3 class="tittle-prime">проєкт prime</h3>
-                    <p class="prime-marketing">маркетинг</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">проєкт prime</h3>
+                    <p class="text-p">маркетинг</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-boxes" src="./images/boxes.jpg" alt="boxes" width="370" height="294">
-                    <h3 class="tittle-boxes">проєкт boxes</h3>
-                    <p class="boxes-addition">додаток</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">проєкт boxes</h3>
+                    <p class="text-p">додаток</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-inspiratio" src="./images/inspiration.jpg" alt="inspiration" width="370" height="294">
-                    <h3 class="tittle-inspiratio">inspiration has no borders</h3>
-                    <p class="web-inspiratio">веб-сайт</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">inspiration has no borders</h3>
+                    <p class="text-p">веб-сайт</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-limited" src="./images/limitededition.jpg" alt="limitededition" width="370" height="294">
-                    <h3 class="tittle-limited">видання limited edition</h3>
-                    <p class="design-limited">дизайн</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">видання limited edition</h3>
+                    <p class="text-p">дизайн</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-lab" src="./images/lab.jpg" alt="lab" width="370" height="294">
-                    <h3 class="tittle-lab">проєкт lab</h3>
-                    <p class="lab-marketing">маркетинг</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">проєкт lab</h3>
+                    <p class="text-p">маркетинг</p>
+                    </div>
                 </li>
-                <li>
+                <li class="gallery-item">
                     <img class="image-growing" src="./images/growing.jpg" alt="growing" width="370" height="294">
-                    <h3 class="tittle-growing">growing business</h3>
-                    <p class="addition-growing">додаток</p>
+                    <div class="text-filtr">
+                    <h3 class="title-filtr">growing business</h3>
+                    <p class="text-p">додаток</p>
+                    </div>
                 </li>
             </ul>
+        </div>
         </section>
 
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <a class="logo-footer" href="index.html">Web<span class="logo-studio-footer">Studio</span></a>
-            <address>
-                <ul class="footer-list">
-                    <li>
-                        <a class="adress-footer link" href="https://goo.gl/maps/YAkSRpgJVrQBJSuu8"
-                        target="_blank" rel="noopener noreferrer nofollow"
-                        >м. Київ, пр-т Лесі Українки, 26</a
-                        >
-                    </li>
-                    <li>
-                        <a class="mail-footer link"
-                        rel="noopener noreferrer nofollow" 
-                        href="info@devstudio.com"
-                        >info@devstudio.com</a
-                        >
-                    </li>
-                    <li><a class="tel-footer link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
-        </div>
+        <div class="container container-footer">
+        <a class="logo-footer" href="index.html">Web<span class="logo-studio-footer">Studio</span></a>
+        <address>
+            <ul class="footer-list list">
+                <li class="line">
+                    <a class="adress-footer link" href="https://goo.gl/maps/YAkSRpgJVrQBJSuu8"
+                    target="_blank" rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                </li>
+                <li class="line">
+                    <a class="mail-footer link"
+                    rel="noopener noreferrer nofollow" 
+                    href="info@devstudio.com"
+                    >info@devstudio.com</a
+                    >
+                </li>
+                <li><a class="tel-footer link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </address>
+    </div>
     </footer>
 </body>
 </html>

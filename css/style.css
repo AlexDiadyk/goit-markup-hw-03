@@ -1,12 +1,12 @@
 :root {
-    --accent: #2196F3;
-    --primary-text-color: #212121;
-    --text-color-white: #FFFFFF;
-    --text-color-gray: #757575;
-    --color-accent-hover: #188ce8;
-    --main-background-color: #FFFFFF;
-    --second-background-color: #2F303A;
-    --third-color-background: #F5F4FA;
+--accent: #2196F3;
+--primary-text-color: #212121;
+--text-color-white: #FFFFFF;
+--text-color-gray: #757575;
+--color-accent-hover: #188ce8;
+--main-background-color: #FFFFFF;
+--second-background-color: #2F303A;
+--third-color-background: #F5F4FA;
 }
 
 /* body */
@@ -26,7 +26,6 @@ padding-bottom: 94px;
 }
 
 .container {
-outline: 1px solid tomato;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
@@ -162,7 +161,6 @@ background: var(--second-background-color);
 }
 
 .section-order {
-outline: 1px solid tomato;
 max-width: 1600px;
 height: 600px;
 margin-right: auto;
@@ -175,7 +173,6 @@ background-size: cover;
 }
 
 .title-decision {
-outline: 1px solid tomato;
 margin-top: 0%;
 margin-bottom: 30px;
 font-weight: 900;
@@ -234,7 +231,7 @@ gap: 30px;
 .advantage-item {
 display: block;
 width: 270px;
-height: 120px;
+height: 98px;
 background-size: 70px 70px;
 background-repeat: no-repeat;
 background-position: center;
@@ -266,7 +263,7 @@ color: var(--text-color-gray);
 
 /* чим займаємось */
 
-.advantages-information {outline: solid tomato;}
+.advantages-information {}
 
 .advantages-container {
   padding-top: 0px;
@@ -432,7 +429,11 @@ color: var(--accent);
 color:var(--text-color-white);
 }
 
-.footer-list {padding: 0px; margin: 0;}
+.footer-list {padding: 0px; margin-left: auto;}
+
+.line {
+  margin-bottom: 9px;
+}
 
 .adress-footer {
 text-decoration: none;
@@ -441,8 +442,6 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-top: 0px;
-margin-bottom: 9px;
 color: var(--text-color-white);
 }
 
@@ -454,8 +453,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-top: 0px;
-margin-bottom: 9px;
+
 
 color: var(--text-color-gray);
 }
@@ -468,7 +466,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-top: 0px;
 margin-bottom: 0px;
 color: var(--text-color-gray);
 }
@@ -481,12 +478,25 @@ color: var(--text-color-gray);
 
  /* Фільтр */
 
+ 
+.list-filtr {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+ .list-filtr :not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-filtr {
 border:none;
 font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+padding: 6px 22px 6px 22px;
 background: #F5F4FA;
 color: var(--primary-text-color);
 }
@@ -504,182 +514,79 @@ cursor: pointer;}
 
     /* фільтр картинки */
 
+
+.flex-container {
+display: flex;
+flex-wrap: wrap; gap: 30px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 30px * 2) / 4);
+}
+
+.text-filtr {
+  padding: 20px 24px 20px 24px;
+  background: var(--main-background-color);
+  box-sizing: border-box;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 0;
+  border: 1px solid #EEEEEE;
+
+}
+
 .image-tehnokriak {
  background: url(portfolio1.jpg)
 }
 
-.tittle-tehnokriak {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.web-tehnokriak {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
-}
-
 .image-poster {
 background: url(portfolio2.jpg);
-}
-    
-.tittle-poster {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color:var(--primary-text-color);
-}
-
-.poster-design {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
 }
 
 .image-seafood {
 background: url(portfolio-1.jpg);
 }
 
-.tittle-seafood {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.seafood-addition {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
-}
-
 .image-prime {
 background: url(portfolio-2.jpg);
-}
-
-.tittle-prime {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.prime-marketing {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
 }
 
 .image-boxes {
 background: url(portfolio5.jpg);
 }
 
-.tittle-boxes {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.boxes-addition {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
-}
-
 .image-inspiratio {
 background: url(111.jpg);
-}
-
-.tittle-inspiratio {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.web-inspiratio {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color:var(--text-color-gray);
 }
 
 .image-limited {
 background: url(portfolio7.jpg);
 }
 
-.tittle-limited {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.design-limited {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
-}
-
 .image-lab {
 background: url(portfolio8.jpg);
-}
-
-.tittle-lab {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-}
-
-.lab-marketing {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--text-color-gray);
 }
 
 .image-growing {
 background: url(2910404.jpg);
 }
 
-.tittle-growing {
+.title-filtr {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+margin-top: 0px;
+margin-bottom: 4px;
 color: var(--primary-text-color);
 }
 
-.addition-growing {
+.text-p {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
+margin-top: 0px;
+margin-bottom: 0px;
 color: var(--text-color-gray);
 }
