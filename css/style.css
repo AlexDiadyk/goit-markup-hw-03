@@ -49,6 +49,10 @@ li {
 header {background: var(--main-background-color);
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
 display: flex;
 align-items: center;
@@ -162,7 +166,6 @@ background: var(--second-background-color);
 
 .section-order {
 max-width: 1600px;
-height: 600px;
 margin-right: auto;
 margin-left: auto;
 
@@ -171,6 +174,12 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
+
+.order-container {
+  margin-bottom: 0;
+  padding: 200px 277px 195px 277px;
+  color: var(--main-background-color);
+  }
 
 .title-decision {
 margin-top: 0%;
@@ -208,46 +217,38 @@ text-decoration: none;
 background-color: var(--color-accent-hover);
   }
 
-.order-container {
-margin-bottom: 0;
-padding: 200px 277px 195px 277px;
-color: var(--main-background-color);
-}
 
 /* наші переваги */
 
-.advantages-information .title {
-padding: 0;
-background: var(--main-background-color);
-}
-
 .visually-hidden { position: absolute; white-space: nowrap; width: 0px; height: 0px; overflow: hidden; border: 0;}
 
-.advantage {
-display: flex;
-gap: 30px;
+.advantages {
+  padding-top: 94px;
+  margin-bottom: 94px;
+  background: var(--main-background-color);
 }
 
-.advantage-item {
-display: block;
-width: 270px;
-height: 98px;
-background-size: 70px 70px;
-background-repeat: no-repeat;
-background-position: center;
-background-color: var(--main-background-color);
+.advantages > .container > .list {
+  display: flex;
 }
 
-.title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-margin-top: 0px;
-margin-bottom: 10px;
-text-transform: uppercase;
-color: var(--primary-text-color);
-text-align: start;
+.advantages .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--primary-text-color);
+}
+
+.advantages .advantage-item > .advantage-text {
+  margin: 0;
+}
+.advantages .advantage-text {
+  width: 270px;
 }
 
 .advantage-text {
@@ -260,29 +261,48 @@ margin-bottom: 0px;
 color: var(--text-color-gray);
 }
 
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* чим займаємось */
 
-.advantages-information {}
+.work {
+  margin-top: 0;
+  margin-bottom: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  }
 
-.advantages-container {
-  padding-top: 0px;
-  padding-bottom: 94px;
+.title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work .list {
+  display: flex;
+  justify-content: center;
+}
+
+.work .list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work .list > .item > img {
+  display: block;
 }
 
 .information {
  background: var(--main-background-color);
-}
-
-.work {
-margin-top: 0;
-margin-bottom: 50px;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
 }
 
 .work-img {
@@ -310,16 +330,17 @@ background: url(creative-artist-web-design-with-working-colour-selection-graphic
 /*наша команда*/
 
 .team {
+padding-top: 94px;
+padding-bottom: 94px;
 background:var(--third-color-background);
 }
 
-.container-team {
-  padding-top: 0px;
-  padding-bottom: 94px;}
+.team .our-team {
+  margin: 0;
+  margin-bottom: 50px;
+}
 
 .our-team {
-margin-top: 0;
-margin-bottom: 50px;
 text-align: center;
 font-weight: 700;
 font-size: 36px;
@@ -478,115 +499,128 @@ color: var(--text-color-gray);
 
  /* Фільтр */
 
- 
-.list-filtr {
+ .main-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
+
+ .main-portfolio > .container > .list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  flex-wrap: wrap;
+}
+
+.main-portfolio .list:first-of-type {
   margin-bottom: 50px;
 }
 
- .list-filtr :not(:last-child) {
+.main-portfolio .item:not(:last-child) {
   margin-right: 8px;
 }
 
+/* кнопки фільтра */
 .button-filtr {
-border:none;
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-padding: 6px 22px 6px 22px;
-background: #F5F4FA;
-color: var(--primary-text-color);
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    color: var(--primary-text-color);
+    background-color: var(--third-color-background);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    font-family: 'Roboto';
+    padding: 6px 22px 6px 22px;
+    background: #F5F4FA;
 }
 
 .button-filtr.current {
-color: var(--text-color-white);
-background-color: var(--accent);
+  color: var(--text-color-white);
+  background-color: var(--accent);
+  }
+
+.main-portfolio-button:hover,
+.main-portfolio-button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  cursor: pointer
 }
 
-.button-filtr:focus,
-.button-filtr:hover {
-color: var(--text-color-white);
-background-color: var(--accent);
-cursor: pointer;}
-
-    /* фільтр картинки */
-
-
+/* картинки */
 .flex-container {
-display: flex;
-flex-wrap: wrap; gap: 30px;
-}
+  display: flex;
+  flex-wrap: wrap; gap: 30px;
 
-.gallery-item {
-  flex-basis: calc((100% - 30px * 2) / 4);
-}
-
-.text-filtr {
-  padding: 20px 24px 20px 24px;
-  background: var(--main-background-color);
-  box-sizing: border-box;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top: 0;
-  border: 1px solid #EEEEEE;
-
-}
-
-.image-tehnokriak {
- background: url(portfolio1.jpg)
-}
-
-.image-poster {
-background: url(portfolio2.jpg);
-}
-
-.image-seafood {
-background: url(portfolio-1.jpg);
-}
-
-.image-prime {
-background: url(portfolio-2.jpg);
-}
-
-.image-boxes {
-background: url(portfolio5.jpg);
-}
-
-.image-inspiratio {
-background: url(111.jpg);
-}
-
-.image-limited {
-background: url(portfolio7.jpg);
-}
-
-.image-lab {
-background: url(portfolio8.jpg);
-}
-
-.image-growing {
-background: url(2910404.jpg);
-}
-
-.title-filtr {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-margin-top: 0px;
-margin-bottom: 4px;
-color: var(--primary-text-color);
-}
-
-.text-p {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-margin-top: 0px;
-margin-bottom: 0px;
-color: var(--text-color-gray);
-}
+  }
+  
+  .gallery-item {
+    flex-basis: calc((100% - (30px * 2)) / 3);
+  }
+  
+  .text-filtr {
+    padding: 20px 24px 20px 24px;
+    background: var(--main-background-color);
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 0;
+    border: 1px solid #EEEEEE;
+  
+  }
+  
+  .image-tehnokriak {
+   background: url(portfolio1.jpg)
+  }
+  
+  .image-poster {
+  background: url(portfolio2.jpg);
+  }
+  
+  .image-seafood {
+  background: url(portfolio-1.jpg);
+  }
+  
+  .image-prime {
+  background: url(portfolio-2.jpg);
+  }
+  
+  .image-boxes {
+  background: url(portfolio5.jpg);
+  }
+  
+  .image-inspiratio {
+  background: url(111.jpg);
+  }
+  
+  .image-limited {
+  background: url(portfolio7.jpg);
+  }
+  
+  .image-lab {
+  background: url(portfolio8.jpg);
+  }
+  
+  .image-growing {
+  background: url(2910404.jpg);
+  }
+  
+  .title-filtr {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+  }
+  
+  .text-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--text-color-gray);
+  }
