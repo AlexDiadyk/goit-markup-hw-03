@@ -165,6 +165,8 @@ color: var(--text-color-gray);
 
 /*секція рішення*/
 .hero {
+padding-top: 200px;
+padding-bottom: 280px;
 text-align: center;
 background: var(--second-background-color);
 }
@@ -180,10 +182,11 @@ background-size: cover;
 }
 
 .order-container {
-  margin-bottom: 0;
-  padding: 200px 277px 195px 277px;
-  color: var(--main-background-color);
-  }
+width: 696px;
+margin-right: auto;
+margin-left: auto;
+color: var(--main-background-color);
+}
 
 .title-decision {
 margin-top: 0%;
@@ -228,7 +231,7 @@ background-color: var(--color-accent-hover);
 
 .advantages {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   background: var(--main-background-color);
 }
 
@@ -272,8 +275,8 @@ color: var(--text-color-gray);
 /* чим займаємось */
 
 .work {
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 0;
+  padding-bottom: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -363,13 +366,7 @@ background-color: var(--third-color-background);;
 }
 
 .team-item {
-display: flex;
-justify-content: center;
-flex-direction: column;
 flex-basis: calc((100% - 30% * 3) / 4);
-align-items: center;
-padding-bottom: 0px;
-width: 270px;
 box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 background-color: var(--main-background-color);
@@ -380,14 +377,14 @@ padding-top: 30px 10px;
 }
 
 .demianenko {
-display: inline-block;
+display: block;
 margin-bottom: 30px;
 background: url(4853.jpg);
 border-radius: 0px;
 }
 
 .repina {
-display: inline-block;
+display: block;
 margin-bottom: 30px;
 font-weight: 500;
 background: url(5844.jpg);
@@ -395,14 +392,14 @@ border-radius: 0px;
 }
 
 .tarasov {
-display: inline-block;
+display: block;
 margin-bottom: 30px;
 background: url(16166.jpg);
 border-radius: 0px;
 }
 
 .ermakov {
-display: inline-block;
+display: block;
 margin-bottom: 30px;
 background: url(2968.jpg);
 border-radius: 0px;
@@ -429,13 +426,11 @@ color: var(--text-color-gray);
 /*footer*/
 
 .footer {
+padding-top: 60px;
+padding-bottom: 60px;
 background: var(--second-background-color);
 }
 
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
 .logo-footer {
 display: block;
@@ -531,7 +526,6 @@ color: var(--text-color-gray);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-
     font-family: 'Roboto';
     padding: 6px 22px 6px 22px;
     background: #F5F4FA;
@@ -585,7 +579,6 @@ text-align: start;
 }
 
 .gallery-item p {
-  display: inline-block;
   margin: 0;
 }
   
@@ -631,11 +624,9 @@ background: var(--main-background-color);
 box-sizing: border-box;
 border-bottom-right-radius: 5px;
 border-bottom-left-radius: 5px;
-border-top: 0;
+border-top: none;
 border: 1px solid #EEEEEE;
 margin: 0;
-margin-bottom: 4px;
-
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
