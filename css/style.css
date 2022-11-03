@@ -100,6 +100,8 @@ color:var(--accent);
 
 .nav-studio {
 text-decoration: none;
+padding-top: 32px;
+padding-bottom: 32px;
 margin-right: 50px;
 font-weight: 500;
 font-size: 14px;
@@ -171,7 +173,6 @@ background: var(--second-background-color);
 max-width: 1600px;
 margin-right: auto;
 margin-left: auto;
-
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
 background-repeat: no-repeat;
 background-position: center;
